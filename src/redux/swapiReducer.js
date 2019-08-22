@@ -4,9 +4,10 @@ const initialState = {
 
 const SET_CHARACTERS = "SET_CHARACTERS"
 
-export function getCharacters() {
+export function getCharacters(people) {
   return {
-    type: SET_CHARACTERS
+    type: SET_CHARACTERS,
+    payload: people
   }
 }
 
@@ -15,7 +16,7 @@ export default function swapiReducer(state = initialState, action) {
   const { type, payload } = action
   switch (type) {
     case SET_CHARACTERS:
-      return { ...state, payload }
+      return { ...state, people: payload }
     default:
       return state
   }
