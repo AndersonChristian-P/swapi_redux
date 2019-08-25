@@ -3,13 +3,12 @@ import promiseMiddleware from "redux-promise-middleware"
 
 import swapiReducer from "./swapiReducer"
 
-// provide ability to use redux devtools
+// provide ability to use redux devtools with multiple reducers
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 
 const enhancer = composeEnhancers(applyMiddleware(promiseMiddleware))
 
 const store = createStore(swapiReducer, enhancer)
-
 
 export default store
 
