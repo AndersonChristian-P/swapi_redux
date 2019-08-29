@@ -1,13 +1,14 @@
 import React from 'react';
 
-import './App.css';
+import GetCharacters from "./components/GetCharacters"
 
 const App = () => {
+
   return (
-    <div className="App">
-      Jello World!
+    <div>
+      <GetCharacters />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
