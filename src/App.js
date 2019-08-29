@@ -1,8 +1,9 @@
 import React from 'react';
+import './App.scss'
 
-import GetCharacters from "./components/GetCharacters"
+import GetCharacters from "./components/GetCharacters/GetCharacters"
 
-const App = () => {
+function App() {
 
   return (
     <div>

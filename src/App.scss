@@ -1,0 +1,22 @@
+// -- FONTS -- //
+@import url('https://fonts.googleapis.com/css?family=News+Cycle:400,700|Pathway+Gothic+One&display=swap');
+
+// -- SNIPPETS -- //
+@import './components/GetCharacters/GetCharacters';
+
+// -- RESET -- //
+* {
+	margin: 0;
+	padding: 0;
+  box-sizing: border-box;
+}
+
+// -- BASE SETUP -- //
+body {
+	font-size: 1em;
+	line-height: 1;
+	text-rendering: optimizeLegibility;
+	background: #000;
+	color: #feda4a;
+	font-family: 'News Cycle', sans-serif;
+}

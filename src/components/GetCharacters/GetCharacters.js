@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { getPeople } from "../redux/starWarsReducer"
+import { getPeople } from "../../redux/starWarsReducer"
 import { connect } from "react-redux"
 
 class GetCharacters extends Component {
@@ -10,12 +10,12 @@ class GetCharacters extends Component {
     ))
 
     return (
-      <>
-        <button onClick={this.props.getPeople} >Get Star Wars Characters</button>
-        <div>
+      <div className="get_char">
+        <button onClick={this.props.getPeople} className="get_char_button" >Get Star Wars Characters</button>
+        <div className="characters">
           {this.props.loading ? 'Fetching people...' : people}
         </div>
-      </>
+      </div>
     )
   }
 }
