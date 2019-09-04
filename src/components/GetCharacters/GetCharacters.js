@@ -5,15 +5,15 @@ import { connect } from "react-redux"
 class GetCharacters extends Component {
   render() {
 
-    const people = this.props.people.map((person, i) => (
-      <div key={i}>{person.name}</div>
+    const people = this.props.people.map((person) => (
+      <div key={person.name}>{person.name}</div>
     ))
 
     return (
       <div className="get_char">
         <button onClick={this.props.getPeople} className="get_char_button" >Get Star Wars Characters</button>
         <div className="characters">
-          {this.props.loading ? 'Fetching people...' : people}
+          {this.props.loading ? 'Fetching characters...' : people}
         </div>
       </div>
     )
